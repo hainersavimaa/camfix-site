@@ -1,0 +1,14 @@
+.block_about {
+  height: auto;
+}
+
+.block_about .about_image {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .block_about .about_image {
+    display: block;
+    background-image: url("/img/about.jpg");
+  }
+}

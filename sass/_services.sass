@@ -1,0 +1,30 @@
+.block_services
+   .services_image
+      background-image: url('../img/services-crop-sm.jpg')
+      background-position: bottom right
+   .services_content
+      ul
+         li
+            position: relative
+            margin: 10px 0
+            font-size: 16px
+            list-style: none
+            &:before
+               content: ""
+               position: absolute
+               top: 8px
+               left: -20px
+               height: 10px
+               width: 10px
+               border: 2px solid #ccc
+               border-radius: 50%
+
+@media only screen and (min-width: 720px)
+   .block_services
+      .services_image
+         background-image: url('../img/services-crop.jpg')
+      .services_content
+         h1.block_title
+            margin-bottom: 0
+         ul li
+            font-size: 18px

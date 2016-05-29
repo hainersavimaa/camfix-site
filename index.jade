@@ -1,0 +1,101 @@
+html(lang="en")
+   head
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(charset="UTF-8")
+      title Camfix | Kaamerate parandus
+      //link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+      link(href="css/style.css" rel="stylesheet")
+      script(src="https://use.fontawesome.com/bd3da5ee8c.js")
+   body
+      header.menu_link
+         nav.cf
+            .logo_area
+            ul
+               li
+                  a(href="#about-section" class="anchor_link") Meist
+               li
+                  a(href="#service-section" class="anchor_link") Teenused
+               li
+                  a(href="#contact-section" class="anchor_link") Kontakt
+            .nav_toggler
+               img(src="img/menu-toggle.png")
+         .header_content
+            h1.hero_heading Kaamerate parandus Tallinnas
+            p.hero_lead Kolmekümne-aastase kogemusega meistri kiire ning kvaliteetne fototehnika remont otse kesklinnas. 
+            a(href="#contact-section").cta.contact_cta.anchor_link Võta ühendust
+      main
+         .block.block_about.menu_link(id="about-section")
+            .box.image_box.about_image
+            .box.content_box.about_content
+               h1.block_title Meist
+               p Fototehnika remondiga oleme tegelenud alates 1987. aastast. 15 aastat pakkusime seda teenust ettevõttes Fotomeister OÜ. Alates 2010. aastast otsustasime selle alaga tegeleda iseseisvalt. Parandame kõikvõimalike foto-ja videotehnikat analoogidest digipeegelkaamerateni.
+         .block.block_services.menu_link(id="service-section")
+            .box.content_box.services_content
+               h1.block_title Teenused
+               ul
+                  li fotoaparaatide remont ja hooldus
+                  li objektiivide remont ja hooldus
+                  li binoklite hooldus
+                  li sensori puhastus
+                  li kasutatud fototehnika müük
+            .box.image_box.services_image
+         .block.block_partners.menu_link
+            .box-full.box_partners
+               .partner_wrap.cf
+                  img(src="img/partner-fotoluks.png")
+                  img(src="img/partner-photopoint.png")
+                  img(src="img/partner-fotomeister.png")
+                  img(src="img/partner-overall.gif")
+         .block.block_feedback.menu_link
+            .box-full.box_feedback
+               h1.block_title Tagasiside
+               .feedback_wrap.cf
+                  mixin stars
+                     - for(var i = 0; i <= 5; i++) {
+                        i.fa.fa-star
+                     - }
+                  .feedback_item
+                     .stars.five-stars
+                        +stars
+                     p.text Lorem ipsum dolor sit amet,  mea. At sea movet numquam vulputate, partem viderer efficiantur ne usu.
+                     span.name &#8212; Betty Vlack
+                  .feedback_item
+                     .stars.five-stars
+                        +stars
+                     p.text Salutatus mea. At sea movet numquam vulputate, partem viderer efficiantur ne usu, et wisi reque sea.
+                     span.name &#8212; Betty Vlack
+                  .feedback_item
+                     .stars.four-stars
+                        +stars
+                     p.text Lorem mea. At sea movet numquam vulputate, partem viderer efficiantur ne usu, et wisi reque sea.
+                     span.name &#8212; Betty Vlack
+                  .feedback_item
+                     .stars.five-stars
+                        +stars
+                     p.text Efficiantur ne usu, et wisi reque sea.
+                     span.name &#8212; Betty Vlack
+                  .feedback_item
+                     .stars.four-stars
+                        +stars
+                     p.text Ppartem viderer efficiantur ne usu, et wisi reque sea.
+                     span.name &#8212; Betty Vlack
+                  .feedback_item
+                     .stars.five-stars
+                        +stars
+                     p.text Lorem ipsum dolor sit amet.
+                     span.name &#8212; Betty Vlack
+         .block.block_contact.menu_link(id="contact-section")
+            .box.image_box.contact_image
+            .box.content_box.contact_content
+               h1.block_title Kontakt
+               .contact_wrap
+                  span.address Narva mnt. 4
+                  span.open E-R 10.00 - 18.00
+                  a(href="mailto:info@camfix.ee")
+                     span.email info@camfix.ee
+                  a(href="tel:578698221")
+                     span.number 578 698 221
+      #toTop &#8657;
+      
+      script(src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous")
+      script(src="/js/functions.js")

@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:900)
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600)
+//@import url(https://fonts.googleapis.com/css?family=Alice|Playfair+Display:900)
+@import url(https://fonts.googleapis.com/css?family=Alice)
+
+@import "normalize"
+@import "header"
+@import "block"
+@import "box"
+@import "about"
+@import "services"
+@import "feedback"
+@import "partners"
+@import "contact"
+html
+   box-sizing: border-box
+   -webkit-font-smoothing: antialiased
+   text-rendering: optimizeLegibility
+   -webkit-font-smoothing: antialiased
+*, *:before, *:after
+   box-sizing: inherit
+.cf:before, .cf:after
+   content: " "
+   display: table
+.cf:after
+   clear: both
+body
+   position: relative
+   overflow-x: hidden
+   font-family: 'Alice', serif
+   font-weight: normal
+   line-height: 1.5
+   margin: 0 0 23px 0
+   color: #333
+   h1,h2,h3,h4,h5,h6
+      font-family: 'Playfair Display', serif
+   h1
+      font-weight: 900
+      line-height: 46px
+      margin: 0 0 23px 0
+   .cta
+      text-decoration: none
+      color: white
+      border: 1px solid white
+      padding: 7px 15px
+      text-transform: uppercase
+      font-size: 14px
+      letter-spacing: 1
+.body_disabled
+   &:after
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: rgba(0,0,0,0.4)
+      z-index: 5
+      transition: all 1.6s ease-in-out
+#toTop
+   height: 40px
+   width: 40px
+   font-size: 32px
+   background: rgba(0,0,0,0.5)
+   border-radius: 5px
+   color: #fff
+   position: fixed
+   bottom: 50px
+   right: 5%
+   display: block
+   text-align: center
+   cursor: pointer
+@media only screen and (min-width: 520px)
+   .body_disabled
+      &:after
+         display: none
