@@ -403,7 +403,6 @@ header {
   background-size: cover;
   background-position: center;
 }
-
 header nav {
   position: absolute;
   z-index: 15;
@@ -413,7 +412,6 @@ header nav {
   right: 0;
   background-color: white;
 }
-
 header nav .logo_area {
   float: left;
   width: 30%;
@@ -423,7 +421,6 @@ header nav .logo_area {
   background-position: center left;
   background-repeat: no-repeat;
 }
-
 header nav ul {
   position: fixed;
   right: -100%;
@@ -436,26 +433,21 @@ header nav ul {
   padding: 70px 20px 0 40px;
   transition: all 0.6s ease-in-out;
 }
-
 header nav ul li {
   list-style: none;
   margin: 25px 0;
 }
-
 header nav ul li a {
   font-size: 18px;
   text-decoration: none;
   color: #333;
 }
-
 header nav ul li .active {
   color: red;
 }
-
 header nav .nav-active {
   right: 0;
 }
-
 header nav .nav_toggler {
   position: fixed;
   top: 10px;
@@ -465,42 +457,29 @@ header nav .nav_toggler {
   border-radius: 5px;
   cursor: pointer;
 }
-
 header nav .nav_toggler img {
   max-width: 40px;
 }
-
 header .header_content {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   color: white;
   padding: 20px;
   text-align: center;
 }
-
 header .header_content h1.hero_heading {
   font-size: 22px;
   padding: 30 10px 0;
   letter-spacing: 2;
 }
-
 header .header_content p.hero_lead {
   margin: 0 0 25px;
   padding: 0 0 10px;
   font-size: 13px;
 }
-
 header .header_content a.contact_cta:hover {
   background: white;
   color: #333;
@@ -540,15 +519,12 @@ header .header_content a.contact_cta:hover {
     padding-bottom: 25px;
   }
 }
-
 .block {
   height: 100vh;
 }
-
 .block:first-child {
   margin-top: 30px;
 }
-
 .block h1.block_title {
   text-align: center;
   color: #444;
@@ -568,38 +544,27 @@ header .header_content a.contact_cta:hover {
     font-size: 26px;
   }
 }
-
 .box {
   height: 50%;
   background-size: cover;
   background-position: center;
   color: #666;
 }
-
 .box p {
   padding: 0 5%;
   text-align: center;
   font-size: 16px;
   margin: 0 0 23px 0;
 }
-
 .box p:last-child {
   margin-bottom: 0;
 }
 
 .content_box {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 @media only screen and (min-width: 720px) {
@@ -615,20 +580,18 @@ header .header_content a.contact_cta:hover {
   .box p:last-child {
     margin-bottom: 0;
   }
+
   .content_box {
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
+
   .box-full h1 {
     text-align: center;
   }
 }
-
 .block_about {
   height: auto;
 }
-
 .block_about .about_image {
   display: none;
 }
@@ -642,19 +605,16 @@ header .header_content a.contact_cta:hover {
     background-image: url("../img/about.jpg");
   }
 }
-
 .block_services .services_image {
   background-image: url("../img/services-crop-sm.jpg");
   background-position: bottom right;
 }
-
 .block_services .services_content ul li {
   position: relative;
   margin: 10px 0;
   font-size: 16px;
   list-style: none;
 }
-
 .block_services .services_content ul li:before {
   content: "";
   position: absolute;
@@ -677,57 +637,46 @@ header .header_content a.contact_cta:hover {
     font-size: 18px;
   }
 }
-
 .block_feedback {
   background: #F3F6F8;
   height: auto;
   min-height: 70vh;
 }
-
 .block_feedback .feedback_wrap {
   width: 100%;
   margin: auto;
   padding: 0 20px;
 }
-
 .block_feedback .feedback_item {
   height: 200px;
   margin: 5px 3%;
   display: none;
 }
-
 .block_feedback .feedback_item:nth-child(-n+4) {
   display: block;
 }
-
 .block_feedback .feedback_item .stars i {
   font-size: 18px;
   color: #D4D5D7;
   margin: 0 5px;
 }
-
 .block_feedback .feedback_item .stars i:first-child {
   margin-left: 0;
 }
-
 .block_feedback .feedback_item .five-stars i:nth-child(-n+5) {
   color: #ffba4a;
 }
-
 .block_feedback .feedback_item .four-stars i:nth-child(-n+4) {
   color: #ffba4a;
 }
-
 .block_feedback .feedback_item p.text {
   color: #666;
   font-size: 16px;
 }
-
 .block_feedback .feedback_item span.name {
   font-size: 20px;
   font-weight: bold;
 }
-
 .block_feedback .feedback_item span.name span {
   font-weight: normal;
 }
@@ -744,7 +693,6 @@ header .header_content a.contact_cta:hover {
     float: left;
   }
 }
-
 @media only screen and (min-width: 720px) {
   .block_feedback {
     height: 80vh;
@@ -752,7 +700,6 @@ header .header_content a.contact_cta:hover {
     margin: 0px;
   }
 }
-
 @media only screen and (min-width: 820px) {
   .block_feedback .feedback_wrap {
     width: 720px;
@@ -764,7 +711,6 @@ header .header_content a.contact_cta:hover {
     float: left;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .block_feedback .feedback_wrap {
     width: 1200px;
@@ -776,11 +722,9 @@ header .header_content a.contact_cta:hover {
     float: left;
   }
 }
-
 .block_partners {
   height: auto;
 }
-
 .block_partners .box_partners .partner_wrap img {
   width: 150px;
   height: 40px;
@@ -804,24 +748,25 @@ header .header_content a.contact_cta:hover {
     margin: 0 5%;
   }
 }
-
+@media only screen and (min-width: 1200px) {
+  .block_partners .box_partners .partner_wrap {
+    max-width: 1100px;
+  }
+}
 .block_contact span, .block_contact input {
   display: block;
   text-align: center;
   margin: 12px 0;
 }
-
 .block_contact .address {
   font-size: 20px;
 }
-
 .block_contact a {
   color: #666;
   text-decoration: none;
   font-size: 22px;
   font-weight: bold;
 }
-
 .block_contact .contact_image {
   background-image: url("../img/map-sm.jpg");
 }
@@ -831,7 +776,6 @@ header .header_content a.contact_cta:hover {
     background-image: url("../img/map.jpg");
   }
 }
-
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -855,23 +799,20 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   font-weight: normal;
   line-height: 1.5;
   margin: 0 0 23px 0;
   color: #333;
 }
-
 body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
-
 body h1 {
   font-weight: 900;
   line-height: 46px;
   margin: 0 0 23px 0;
 }
-
 body .cta {
   text-decoration: none;
   color: white;
@@ -914,3 +855,5 @@ body .cta {
     display: none;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
